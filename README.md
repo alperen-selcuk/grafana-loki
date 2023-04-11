@@ -17,3 +17,9 @@ helm repo update
 
 helm install loki grafana/loki-stack --values loki-values.yaml -n loki --create-namespace
 ```
+
+install sonrası password almak için, secret e bakarız
+
+```
+kubectl get secret loki-stack-grafana -oyaml
+```
