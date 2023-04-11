@@ -15,5 +15,5 @@ helm repo add grafana https://grafana.github.io/helm-charts
 
 helm repo update
 
-helm install loki grafana/loki-stack --values /tmp/loki-stack-values.yaml -n loki --create-namespace
+helm install loki grafana/loki-stack --values loki-values.yaml -n loki --create-namespace
 ```
