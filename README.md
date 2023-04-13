@@ -23,3 +23,11 @@ install sonrası password almak için, secret e bakarız
 ```
 kubectl get secret loki-stack-grafana -oyaml
 ```
+
+demo APP:
+
+```
+helm repo add sossickd https://sossickd.github.io/helm-charts/
+helm update
+helm install my-php-guest-book sossickd/php-guest-book --version 0.1.0
+```
